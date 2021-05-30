@@ -1,3 +1,11 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Police Emergency Service System</title>
+	<br><img src="images/policeemergencybannerrafidah.png" alt="Police Emergency Banner">
+	<link href="header_style.css" rel="stylesheet" type="text/css">
+	<link href="content_style.css" rel="stylesheet" type="text/css">
 <?php
 
 	// validate if request comes from logcall.php or post back
@@ -75,7 +83,7 @@ if (isset($_POST["btnDispatch"])) {
 
 <!-- display the incident information passed from logcall.php -->
 <form name="form1" method="post" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?> ">
-<table>
+<table class="ContentStyle">
 	<tr>
 		<td colspan"2">Incident Detail</td>
 	</tr>
@@ -132,9 +140,9 @@ if (isset($_POST["btnDispatch"])) {
 ?>
 
 	<!-- populate table with patrol car data -->
-	<table>
+	<table class="ContentStyle">
 		<tr>
-			<td colspan="3">Dispatch Patrolcar Panel</td>
+			<br><br><td colspan="3">Dispatch Patrolcar Panel</td>
 		</tr>
 		<?php
 			foreach($patrolcarArray as $key=>$value) {
@@ -148,8 +156,8 @@ if (isset($_POST["btnDispatch"])) {
 				}	
 			?>
 			<tr>
-				<td><input type="reset" name="btnCancel" id="btnCancel" value="Reset"></td>
-				<td colspan="2"><input type="submit" name="btnDispatch" id="btnDispatch" value="Dispatch">
+				<td><input type="reset" STYLE="color: #dd5e89; font-size: 14px; background-color: #FFFFFF;" name="btnCancel" id="btnCancel" value="Reset"></td>
+				<td colspan="2"><input type="submit" STYLE="color: #dd5e89; font-size: 14px; background-color: #FFFFFF;" name="btnDispatch" id="btnDispatch" value="Dispatch">
 				</td>
 			</tr>
 </table>

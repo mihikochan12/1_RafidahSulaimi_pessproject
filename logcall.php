@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Police Emergency Service System</title>
+	<br><img src="images/policeemergencybannerrafidah.png" alt="Police Emergency Banner">
 	<link href="header_style.css" rel="stylesheet" type="text/css">
 	<link href="content_style.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript">
@@ -72,7 +73,7 @@ if ($result->num_rows > 0) {
 	onSubmit="return validateForm()" action="dispatch.php">
 <table class="ContentStyle">
 	<tr>
-		<td colspan="2">Log call Panel</td>
+		<td colspan="2">Log Call Panel</td>
 	</tr>
 	
 	<tr>
@@ -110,9 +111,9 @@ if ($result->num_rows > 0) {
 		</td>
 	</tr>
 	<tr>
-		<td><input type="reset" name="btnCancel" id="btnCancel" value="Reset">
+		<td><input type="reset" STYLE="color: #dd5e89; font-size: 14px; background-color: #FFFFFF;" name="btnCancel" id="btnCancel" value="Reset">
 		</td>
-		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="btnProcessCall" id="btnProcessCall" value="Process Call...">
+		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" STYLE="color: #dd5e89; font-size: 14px; background-color: #FFFFFF;" name="btnProcessCall" id="btnProcessCall" value="Process Call...">
 		</td>
 	</tr>
 	</table>

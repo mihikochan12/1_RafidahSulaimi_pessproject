@@ -1,10 +1,9 @@
 <h1>Police Emergency Service System</h1>
-<div id="HeaderStyle">
-<link rel="stylesheet" href="header_style.css">
-<nav>
-	<a href="logcall.php">Log Call</a>
-	<a href="update.php">Update</a>
-	<a href="#">Report</a>
-	<a href="#">History</a>
+<nav id="HeaderStyle">
+	<ul>
+	<li><a href="logcall.php"><span>Log Call</span></a></li>
+	<li><a href="update.php"><span>Update</span></a></li>
+	<li><a href="#"><span>Report</span></a></li>
+	<li><a href="#"><span>History</span></a></li>
+	</ul>
 </nav>
-</div>

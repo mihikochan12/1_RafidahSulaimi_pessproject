@@ -1,3 +1,9 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Police Emergency Service System</title>
+	<br><img src="images/policeemergencybannerrafidah.png" alt="Police Emergency Banner">
 	<link href="header_style.css" rel="stylesheet" type="text/css">
 	<link href="content_style.css" rel="stylesheet" type="text/css">
 <!<-- Part 1 -->
@@ -9,12 +15,12 @@ if (!isset($_POST["btnSearch"])){
 <!-- create a form to search for patrol car based on id -->
 <form name="form1" method="post" 
 	action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?> ">
-<table class="ContentStyle">
+	<table class="ContentStyle">
 <tr></tr>
 <tr>
 	<td> Patrol Car ID :</td>
 	<td><input type="text" name="patrolCarId" id="patrolCarID"></td>
-	<td><input type="submit" name="btnSearch" id="btnSearch" value="Search"></td>
+	<td><input type="submit" STYLE="color: #dd5e89; font-size: 14px; background-color: #FFFFFF;" name="btnSearch" id="btnSearch" value="Search"></td>
 	</tr>
 	</table>
 	</form>
@@ -95,8 +101,8 @@ else
 		</select></td>
 		</tr>
 		<tr>
-			<td><input type="reset" name="btnCancel" id="btnCancel" value="Reset"></td>
-			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="btnUpdate" id="btnUpdate" value="Update">
+			<td><input type="reset" STYLE="color: #dd5e89; font-size: 14px; background-color: #FFFFFF;" name="btnCancel" id="btnCancel" value="Reset"></td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" STYLE="color: #dd5e89; font-size: 14px; background-color: #FFFFFF;" name="btnUpdate" id="btnUpdate" value="Update">
 			</td>
 			</tr>
 			</table>
@@ -153,3 +159,5 @@ if (isset($_POST["btnUpdate"])) {
 	?>
 	<script type="text/javascript">window.location="./logcall.php";</script>
 <?php } ?>
+<body>
+</html>
