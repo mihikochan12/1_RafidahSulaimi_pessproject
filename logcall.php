@@ -111,9 +111,9 @@ if ($result->num_rows > 0) {
 		</td>
 	</tr>
 	<tr>
-		<td><input type="reset" STYLE="color: #dd5e89; font-size: 14px; background-color: #FFFFFF;" name="btnCancel" id="btnCancel" value="Reset">
+		<td><input type="reset" STYLE="color: #ffffff; font-size: 14px; background-color: #dd5e89;" name="btnCancel" id="btnCancel" value="Reset">
 		</td>
-		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" STYLE="color: #dd5e89; font-size: 14px; background-color: #FFFFFF;" name="btnProcessCall" id="btnProcessCall" value="Process Call...">
+		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" STYLE="color: #ffffff; font-size: 14px; background-color: #dd5e89;" name="btnProcessCall" id="btnProcessCall" value="Process Call...">
 		</td>
 	</tr>
 	</table>

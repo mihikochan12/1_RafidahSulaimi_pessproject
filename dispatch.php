@@ -25,8 +25,8 @@ if (isset($_POST["btnDispatch"])) {
 	if ($conn->connect_error) {
 		die("Connection failed: " . $conn->connect_error);
 	}
-	echo "m here 1";
-	$patrolcarDispatched = $_POST["chkPatrolcar"];		// array of patrolcar being dispatched from post back
+	echo "Error";
+	$patrolcarDispatched = $_POST["chkPatrolcar"];		// arrayarray of patrolcar being dispatched from post back
 	$numOfPatrolcarDispatched = count($patrolcarDispatched);
 	
 	if($numOfPatrolcarDispatched > 0) {
@@ -34,7 +34,7 @@ if (isset($_POST["btnDispatch"])) {
 	} 
 	else {
 		$incidentStatus="1";	// incident status to be set as Pending
-		echo "m here 2";
+		echo "Error";
 	}
 	$sql = "INSERT INTO incident (caller_name, phone_number, incident_type_id, incident_location, incident_desc, incident_status_id) 
 			VALUES('".$_POST['callerName']."', '".$_POST['contactNo']."', '".$_POST['incidentType']."', '".$_POST['location']."', '".$_POST['incidentDesc']."', $incidentStatus)";
@@ -156,8 +156,8 @@ if (isset($_POST["btnDispatch"])) {
 				}	
 			?>
 			<tr>
-				<td><input type="reset" STYLE="color: #dd5e89; font-size: 14px; background-color: #FFFFFF;" name="btnCancel" id="btnCancel" value="Reset"></td>
-				<td colspan="2"><input type="submit" STYLE="color: #dd5e89; font-size: 14px; background-color: #FFFFFF;" name="btnDispatch" id="btnDispatch" value="Dispatch">
+				<td><input type="reset" STYLE="color: #ffffff; font-size: 14px; background-color: #dd5e89;" name="btnCancel" id="btnCancel" value="Reset"></td>
+				<td colspan="2"><input type="submit" STYLE="color: #ffffff; font-size: 14px; background-color: #dd5e89;" name="btnDispatch" id="btnDispatch" value="Dispatch">
 				</td>
 			</tr>
 </table>

@@ -20,7 +20,7 @@ if (!isset($_POST["btnSearch"])){
 <tr>
 	<td> Patrol Car ID :</td>
 	<td><input type="text" name="patrolCarId" id="patrolCarID"></td>
-	<td><input type="submit" STYLE="color: #dd5e89; font-size: 14px; background-color: #FFFFFF;" name="btnSearch" id="btnSearch" value="Search"></td>
+	<td><input type="submit" STYLE="color: #ffffff; font-size: 14px; background-color: #dd5e89;" name="btnSearch" id="btnSearch" value="Search"></td>
 	</tr>
 	</table>
 	</form>
@@ -101,8 +101,8 @@ else
 		</select></td>
 		</tr>
 		<tr>
-			<td><input type="reset" STYLE="color: #dd5e89; font-size: 14px; background-color: #FFFFFF;" name="btnCancel" id="btnCancel" value="Reset"></td>
-			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" STYLE="color: #dd5e89; font-size: 14px; background-color: #FFFFFF;" name="btnUpdate" id="btnUpdate" value="Update">
+			<td><input type="reset" STYLE="color: #ffffff; font-size: 14px; background-color: #dd5e89;" name="btnCancel" id="btnCancel" value="Reset"></td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" STYLE="color: #ffffff; font-size: 14px; background-color: #dd5e89;" name="btnUpdate" id="btnUpdate" value="Update">
 			</td>
 			</tr>
 			</table>

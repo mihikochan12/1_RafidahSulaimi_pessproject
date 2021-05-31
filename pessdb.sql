@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 27, 2021 at 11:52 AM
+-- Generation Time: May 31, 2021 at 06:00 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -131,11 +131,19 @@ CREATE TABLE `patrolcar` (
 --
 
 INSERT INTO `patrolcar` (`patrolcar_id`, `patrolcar_status_id`) VALUES
+('QX1111A', '3'),
 ('QX1234', '3'),
+('QX2222B', '3'),
+('QX3333C', '3'),
 ('QX4321R', '3'),
 ('QX4444P', '1'),
 ('QX45545', '1'),
-('QX9999H', '1');
+('QX5555E', '3'),
+('QX6666F', '3'),
+('QX7777G', '2'),
+('QX8888H', '3'),
+('QX9999H', '1'),
+('QX9999I', '3');
 
 -- --------------------------------------------------------
 
@@ -208,7 +216,7 @@ ALTER TABLE `patrolcar_status`
 -- AUTO_INCREMENT for table `incident`
 --
 ALTER TABLE `incident`
-  MODIFY `incident_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `incident_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- Constraints for dumped tables
