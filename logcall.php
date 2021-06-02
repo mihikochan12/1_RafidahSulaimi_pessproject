@@ -4,36 +4,36 @@
 	<meta charset="utf-8">
 	<title>Police Emergency Service System</title>
 	<br><img src="images/policeemergencybannerrafidah.png" alt="Police Emergency Banner">
-	<link href="header_style.css" rel="stylesheet" type="text/css">
-	<link href="content_style.css" rel="stylesheet" type="text/css">
-	<script type="text/javascript">
+	<link href="header_style.css" rel="stylesheet" type="text/css">  
+	<link href="content_style.css" rel="stylesheet" type="text/css"> 
+	<script type="text/javascript"> // this function helps to make every text field to be required
 	function validateForm()
 	{
 		var x=document.forms["frmLogCall"]["callerName"].value;
 		if (x==null || x=="")
 		{
-			alert("Caller Name is required.");
+			alert("Caller Name is required."); //this will make the caller name required,if it's empty the browser will prompt user to key in something
 			return false;
 			
 		}
 		x = document.forms["frmLogCall"]["contactNo"].value;
 		if (x==null || x=="")
 		{
-			alert("Contact Number is required.");
+			alert("Contact Number is required."); //this will make the contact number required,if it's empty the browser will prompt user to key in something
 			return false;
 			
 		}
 		x = document.forms["frmLogCall"]["location"].value;
 		if (x==null || x=="")
 		{
-			alert("location is required.");
+			alert("location is required."); //this will make the location required,if it's empty the browser will prompt user to key in something
 			return false;
 			
 		}
 		x = document.forms["frmLogCall"]["incidentDesc"].value;
 		if (x==null || x=="")
 		{
-			alert("Incident Description is required.");
+			alert("Incident Description is required."); //this will make the description required,if it's empty the browser will prompt user to key in something, the browser won't let the user proceed to to next if the user doesnt fill all the required text field 
 			return false;
 			
 		}
@@ -43,19 +43,19 @@
 </head>
 <body>
 <?php // import nav.php
-require_once 'nav.php';
+require_once 'nav.php'; 
 ?>
 <?php // import db.php
-require_once 'db.php';
+require_once 'db.php'; 
 
 // Create connection 
-$conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
+$conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE); // this will create connection 
 // Check connection
 if ($conn->connect_error) {
-	die("Connection failed: " . $conn->connect_error);
+	die("Connection failed: " . $conn->connect_error); 
 }
 
-$sql = "SELECT * FROM incident_type";
+$sql = "SELECT * FROM incident_type"; 
 
 $result = $conn->query($sql);
 
